@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>results:</h1>
+    <p id="result-add"></p>
+    <p id="result-subtract"></p>
+    <p id="result-multiply"></p>
+    <p id="result-pi"></p>
+    <script type="module">
+        import * as jadoo from './main.mjs';
+        import multiplying from './newfile.mjs';
+        document.getElementById('result-add').innerText = `Add: ${jadoo.add(5,3)}`;
+        document.getElementById('result-subtract').innerText = `Subtract: ${jadoo.subtract(5,3)}`;
+        document.getElementById('result-multiply').innerText = `Multiply: ${multiplying(5,3)}`;
+        document.getElementById('result-pi').innerText = `pi: ${jadoo.PI}`;
+    </script>
+    
+</body>
+</html>
